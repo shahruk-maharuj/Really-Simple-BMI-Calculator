@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link here -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JS 2.0</title>
+  </head>
+  <body class="container mx-auto px-4">
+    <div class="w-full max-w-xs">
+        <h1 class="block text-gray-700 text-sm font-bold">Really Simple <br> BMI Calculator</h1>
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="weight"
+            >Weight (kg):</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2"
+            type="number"
+            id="weight"
+            name="weight"
+          />
+        </div>
+        <div>
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="height"
+            >Height (m):</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+            type="number"
+            id="height"
+            name="height"
+          />
+        </div>
+        <button
+          class="inline-block px-5 py-2 mx-auto text-white bg-blue-600 rounded-full hover:bg-blue-700 md:mx-0"
+          type="button"
+          onclick="calculateBMI()"
+        >
+          Calculate BMI
+        </button>
+        <div
+          class="block text-gray-700 text-xs font-bold mt-2"
+          id="result"
+        ></div>
+      </form>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
